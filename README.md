@@ -39,4 +39,5 @@ O gerenciamento de dependências de Front-end fica a cargo do **Yarn**.
 ### Rodar o projeto
 
 Com o node instalado, para iniciar o projeto use os comandos
- `yarn install && yarn start `
+ `yarn install && yarn start ` 
+ 

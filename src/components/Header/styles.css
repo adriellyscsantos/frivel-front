@@ -1,8 +1,140 @@
-.header{
-    background-color: #00816E;
-    color: white;
-    height: 60vh;    
-    color: white;
-    font-size: 50px;
-
+.header {
+  background: url("../../assets/bg-frivel.jpg"); 
+  background-size: cover;
+  color: white;
+  height: 700px;
+  font-size: 50px;
 }
+
+.header-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 210px; */
+}
+
+.logotipo {
+  background: url("../../assets/logotipo.svg");
+  background-size: cover;
+  width: 100px;
+  height: 80px;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #000;
+  margin-top: -40px;
+}
+
+.header-items__button {
+  background-color: #00816e;
+  list-style: none;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.header-items__button:hover{
+  cursor: pointer;
+}
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-texto {
+  width: 35%;
+  margin-top: 40px;
+}
+.header-h1 {
+  color: #000;
+  font-size: 40px;
+}
+.header-button {
+  background-color: #00816e;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 75px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.header-button:hover {
+  transform: scale(1.03);
+}
+
+.header-imagem {
+  background: url("../../assets/imagem-header.svg");
+  background-size: cover;
+  width: 550px;
+  height: 306px;
+  margin-top: 40px;
+}
+
+.text-green {
+  color: #00816e;
+}
+.header-elipse {
+  background: url("../../assets/elipse-bg.svg");
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  /* margin-top: -40px; */
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+  .header-content {
+    width: 100%;
+  }
+  .header-nav {
+    margin: 0px 60px;
+  }
+  .header-box {
+    justify-content: space-around;
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 425px) {
+
+    .header{
+        height: 550px;
+    }
+    .header-box {
+       display: block;
+      }
+      .header-texto {
+        width: 100%;
+        margin-top: 40px;
+      }
+     .header-imagem, .header-elipse {
+       display: none;
+      }
+      .header-nav {
+        margin: 0px 20px;
+      }
+      
+  }
+
+
+  @media (max-width: 320px) {
+
+      .header-nav {
+        margin: 0px ;
+      }
+      
+  }

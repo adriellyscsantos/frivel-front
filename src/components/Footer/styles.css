@@ -1,0 +1,14 @@
+.footer{
+    margin-top: 100px;
+}
+
+.footer-p{
+    background-color: #00816E;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

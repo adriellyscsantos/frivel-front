@@ -1,11 +1,13 @@
 import React from 'react'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/global.css'
-import Header from './components/Header'
+import Routes from './routes/Routes'
+
 
 function App() {
   return (
     <>
-     <Header />
+     <Routes />    
     </>
   );
 }

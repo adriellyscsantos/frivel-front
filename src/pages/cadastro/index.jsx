@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import SignUp from "../../components/SignUp";
 
 const Cadastro = () => {
-    return (
-        <div>
-            Teste
-        </div>
-    )
-}
+  return (
+    <>
+      <SignUp />
+    </>
+  );
+};
 
-export default Cadastro
+export default Cadastro;

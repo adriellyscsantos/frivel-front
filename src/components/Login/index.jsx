@@ -1,60 +1,40 @@
 import React from "react";
 import "./styles.css";
 
-const Login = () => {
+const SignUp = () => {
   return (
-    <><div class="content second-content">
-          <div class="first-column">
-              <img class="logo" src="img\logo666.png" />
-              <h2 class="title title-primary">Olá Amigo!</h2>
-              <p class="description description-primary">
-                  Entre com seus dados pessoais
-              </p>
-              <p class="description description-primary">
-                  e inicie sua jornada conosco
-              </p>
-              <button id="signup" class="btn btn-primary">cadastre-se</button>
-          </div>
-          <div class="second-column">
-              <h2 class="title title-second">Entre no Frivel</h2>
-              <div class="social-media">
-                  <ul class="list-social-media">
-                      <a class="link-social-media" href="#">
-                          <li class="item-social-media">
-                              <i class="fab fa-facebook-f"></i>
-                          </li>
-                      </a>
-                      <a class="link-social-media" href="#">
-                          <li class="item-social-media">
-                              <i class="fab fa-google-plus-g"></i>
-                          </li>
-                      </a>
-                      <a class="link-social-media" href="#">
-                          <li class="item-social-media">
-                              <i class="fab fa-linkedin-in"></i>
-                          </li>
-                      </a>
-                  </ul>
-              </div>
-          </div>
-      </div><p class="description description-second">
-              ou use sua conta de e-mail:
-          </p><form class="form">
-              <label class="label-input" for="">
-                  <i class="far fa-envelope icon-modify"></i>
-                  <input type="email" placeholder="Email" />
-              </label>
+    <div className="content first-content">
+      <div className="first-column">
+        <div className="logo"></div>
+        <h2 className="title title-primary">Bem-vindo(a) ao Frivel</h2>
+        <p className="description description-primary">
+          Use seus dados para se cadastrar
+        </p>
+        <p className="description description-primary">
+          E inicie sua jornada conosco!
+        </p>
+        <button id="signin" className="btn btn-primary">
+          Cadastrar
+        </button>
+      </div>
+      <div className="second-column">
+        <h2 className="title title-second">Entre no Frivel</h2>
+        <form className="form">
+          <label className="label-input" for="">
+            <i className="far fa-user icon-modify"></i>
+            <input type="text" placeholder="Nome" />
+          </label>
 
-              <label class="label-input" for="">
-                  <i class="fas fa-lock icon-modify"></i>
-                  <input type="password" placeholder="Password" />
-              </label>
+          <label className="label-input" for="">
+            <i className="far fa-envelope icon-modify"></i>
+            <input type="e-mail" placeholder="E-mail" />
+          </label>
 
-              <a class="password" href="#">esqueceu sua senha?</a>
-              <button class="btn btn-second">entre</button>
-          </form></>
-
+          <button className="btn btn-second ">entrar</button>
+        </form>
+      </div>
+    </div>
   );
 };
 
-export default Login;
+export default SignUp;

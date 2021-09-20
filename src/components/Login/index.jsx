@@ -27,7 +27,7 @@ const SignUp = () => {
 
           <label className="label-input" for="">
             <i className="far fa-envelope icon-modify"></i>
-            <input type="e-mail" placeholder="E-mail" />
+            <input type="text" placeholder="Senha" />
           </label>
 
           <button className="btn btn-second ">entrar</button>

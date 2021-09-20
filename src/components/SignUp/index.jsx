@@ -19,28 +19,6 @@ const SignUp = () => {
       </div>
       <div className="second-column">
         <h2 className="title title-second">Criar conta</h2>
-        <div className="social-media">
-          <ul className="list-social-media">
-            <a className="link-social-media" href="#">
-              <li className="item-social-media">
-                <i className="fab fa-facebook-f"></i>
-              </li>
-            </a>
-            <a className="link-social-media" href="#">
-              <li className="item-social-media">
-                <i className="fab fa-google-plus-g"></i>
-              </li>
-            </a>
-            <a className="link-social-media" href="#">
-              <li className="item-social-media">
-                <i className="fab fa-linkedin-in"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <p className="description description-second">
-          ou use o email para se registrar:
-        </p>
         <form className="form">
           <label className="label-input" for="">
             <i className="far fa-user icon-modify"></i>
@@ -49,7 +27,7 @@ const SignUp = () => {
 
           <label className="label-input" for="">
             <i className="far fa-envelope icon-modify"></i>
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="E-mail" />
           </label>
 
           <label className="label-input" for="">

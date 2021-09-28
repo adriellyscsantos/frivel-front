@@ -3,14 +3,14 @@ import "./styles.css";
 
 const Cards = (props) => {
   return (
-    <div className="container">
-      <div className="box">
-          <div className='imagem'></div>
-        <h3 className="titulo">{props.titulo}</h3>
-        <p className="descricao">{props.descricao}</p>
+    <div className="container__cards">
+      <div className="box__cards">
+          <div className='imagem__cards'></div>
+        <h3 className="titulo__cards">{props.titulo}</h3>
+        <p className="descricao__cards">{props.descricao}</p>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default Cards;

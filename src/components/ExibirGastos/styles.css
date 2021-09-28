@@ -1,0 +1,46 @@
+.container__gastos {
+  box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+  width: 463px;
+  height: 274px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.container__gastos:not(:first-child) {
+  margin-top: 20px;
+}
+
+.container-box__gastos {
+  width: 100%;
+  height: 100%;
+}
+
+.titulo-gastos__gastos {
+  font-weight: bold;
+  font-size: 28px;
+  color: #5e5d5d;
+  margin: 20px 20px 0px 20px;
+  padding-top: 20px;
+}
+
+.box__gastos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 15px;
+}
+.borda-box__gastos:not(:last-child) {
+  border-top: 0.0625rem solid #ddd;
+  margin-top: 15px;
+}
+.box-gastos__gastos {
+  margin: 20px;
+}
+
+.botao-excluir__gastos {
+  border: none;
+  background-color: #da291c;
+  border-radius: 20px;
+  color: #fff;
+}

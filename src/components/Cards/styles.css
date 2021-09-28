@@ -1,37 +1,35 @@
-.container {
-    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
-    width: 230px;
-    height: 250px;   
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    justify-content: center;
-   
+.container__cards {
+  box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+  width: 230px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  justify-content: center;
 }
 
-.box{
-     text-align: center;
+.box__cards {
+  text-align: center;
 }
 
-.imagem{
-    background: url('../../assets/porquinho.svg');
-    background-size: cover;
-    width: 40%;
-    height: 80px;
-    margin: 0 auto;
+.imagem__cards {
+  background: url("../../assets/porquinho.svg");
+  background-size: cover;
+  width: 40%;
+  height: 80px;
+  margin: 0 auto;
 }
-.titulo{
-    font-weight: bold;
-    font-size: 20px;
-    color: #000;
-    text-transform: uppercase;
-    margin-top: 10px
+.titulo__cards {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
-.descricao{
-    font-size: 17px;
-    color: #808080;
-    margin-top: 10px;
-        
+.descricao__cards {
+  font-size: 17px;
+  color: #808080;
+  margin-top: 10px;
 }

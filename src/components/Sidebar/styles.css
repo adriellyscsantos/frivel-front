@@ -1,0 +1,89 @@
+/* Layout */
+.s-layout {
+  display: flex;
+}
+
+.s-layout__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Sidebar */
+
+.s-sidebar__nav {
+  position: fixed;
+  top: 0;
+  left: -15em;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  width: 2em;
+  height: 100%;
+  background-color: #00816e;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav ul {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.s-sidebar__nav ul li {
+  width: 100%;
+}
+
+.s-sidebar__nav-link {
+  position: relative;
+  display: inline-block;
+  height: 4em;
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+.s-sidebar__nav-logout {
+  margin-top: 90px;
+}
+.box__icons {
+  background-color: white;
+  border-radius: 30px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+/* Mobile First */
+@media (min-width: 42em) {
+  .s-layout__content {
+    margin-left: 4em;
+  }
+
+  .s-sidebar__nav {
+    width: 4em;
+    left: 0;
+  }
+}
+
+@media (min-width: 68em) {
+  .s-layout__content {
+    margin-left: 15em;
+  }
+
+  /* Sidebar */
+
+  .s-sidebar__nav {
+    width: 5em;
+  }
+
+  .s-sidebar__nav ul {
+    top: 1.3em;
+  }
+}

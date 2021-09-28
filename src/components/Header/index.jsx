@@ -10,7 +10,9 @@ const Header = () => {
           <div className="header-nav">
             <div className="logotipo"> </div>
             <div className="header-items">
-              <p>Entrar</p>
+              <Link to="/cadastro">
+                <p>Entrar</p>
+              </Link>
               <Link to="/cadastro">
                 <button className="header-items__button">Cadastre-se</button>
               </Link>

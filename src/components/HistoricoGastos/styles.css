@@ -1,0 +1,57 @@
+.container__historico {
+  box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+  width: 463px;
+  height: 570px;
+  background-color: #fff;
+  border-radius: 20px;
+  /* margin-top: -30px; */
+}
+
+.container-box__historico {
+  width: 100%;
+  height: 100%;
+}
+
+.titulo__historico {
+  font-weight: bold;
+  font-size: 28px;
+  color: #5e5d5d;
+  margin-left: 20px;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+
+.box__historico {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.borda-box__historico:not(:last-child) {
+  border-top: 0.0625rem solid #ddd;
+  margin-top: 20px;
+}
+
+.box-gastos__historico {
+  margin: 20px;
+}
+
+.historico-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-historico {
+  background: url("../../assets/img-historico.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.box-img__historico {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}

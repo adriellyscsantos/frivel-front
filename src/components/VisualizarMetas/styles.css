@@ -36,10 +36,11 @@
   visibility: visible;
   opacity: 1;
 }
-.modal__title {
+.modal__title_visualizar{
   color: #00816e;
-  font-size: 30px;
-  margin-left: 10px;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 .modal__content {
   border-radius: 10px;
@@ -91,7 +92,7 @@
   border-radius: 10px;
   width: 90px;
   float:right;
-  margin-right: -15px;
+  margin-right: 0px;
 }
 
 .progresso-txt{
@@ -102,7 +103,7 @@
 }
 
 .progress-bar{
-  width: 80%;
+  width: 70%;
 }
 
 .modal__fechar{

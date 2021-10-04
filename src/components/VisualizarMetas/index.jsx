@@ -9,19 +9,20 @@ const VisualizarMetas = () => {
 
       <div id="demo-visualizarmetas" className="modal">
         <div className="modal__content">
-          <h1 className="modal__title">Visualizar Meta</h1>
+          <h1 className="modal__title_visualizar">Visualizar Meta</h1>
           <div className="modal__form-content row">
             <div className="col-md-12 txt-area">
-              <textarea rows="6" cols="50" className="modal__form-textarea">
+              <textarea rows="6" cols="52" className="modal__form-textarea">
               </textarea>
             </div>
             <div className="col-md-12">
               <button className="btn-edt-modal">Editar</button>
             </div>
             <div className="col-md-12 progresso-txt">
+            
+            <br></br>
               Progresso
             </div>
-            <p></p>
             <div className="progresso-modal col-md-12">
               <ProgressBar variant="success" now={60} />
             </div>

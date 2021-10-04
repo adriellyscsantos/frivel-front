@@ -69,7 +69,7 @@
   display: flex;
 }
 .modal__form-content {
-  margin: 20px auto;
+  /* margin: 20px auto; */
 }
 
 .modal__form-input {

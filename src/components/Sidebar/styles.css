@@ -46,6 +46,9 @@
   width: 100%;
   text-align: center;
 }
+.s-sidebar__nav-link:hover {
+  color: white;
+}
 
 .s-sidebar__nav-logout {
   margin-top: 90px;

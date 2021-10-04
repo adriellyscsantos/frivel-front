@@ -14,7 +14,6 @@ const ExibirGastos = (props) => {
           <Gastos gasto="Spotify" valor="R$ 15.00" />
           <Gastos gasto="Spotify" valor="R$ 15.00" />
           <Gastos gasto="Spotify" valor="R$ 15.00" />
-          <Gastos gasto="Spotify" valor="R$ 15.00" />
         </div>
       </div>
     </div>

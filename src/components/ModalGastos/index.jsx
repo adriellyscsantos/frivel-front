@@ -3,6 +3,9 @@ import "./styles.css";
 import { AiOutlineClose } from "react-icons/ai";
 
 const ModalGastos = () => {
+  const handleClick = () => {
+    alert("Gasto adicionado com sucesso!");
+  };
   return (
     <>
       <div className="wrapper">
@@ -44,7 +47,9 @@ const ModalGastos = () => {
           </form>
 
           <div className="modal__footer">
-            <button className="modal__footer-add">Adicionar</button>
+            <button className="modal__footer-add" onClick={handleClick}>
+              Adicionar
+            </button>
           </div>
 
           <a href="#" className="modal__close">

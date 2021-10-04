@@ -1,0 +1,116 @@
+/* If you like this, be sure to ❤️ it. */
+.wrapper {
+  /* This part is important for centering the content */
+  display: flex;
+  align-items: center;
+}
+
+.wrapper a {
+  background-color: #4169e1;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.7);
+  transition: all 0.4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__title {
+  color: #00816e;
+  font-size: 30px;
+  margin-left: 10px;
+}
+.modal__content {
+  border-radius: 10px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+  text-align: left;
+}
+
+.modal__footer {
+  text-align: right;
+}
+
+.modal__form {
+  display: flex;
+}
+.modal__form-content {
+  margin: 0px;
+}
+
+.modal__form-textarea{
+  background-color: #e9e9e9;
+  border: none;
+  border-radius: 10px;
+ 
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #585858;
+  text-decoration: none;
+}
+.modal_form-inputmenor{
+  background-color: #e9e9e9;
+  border: none;
+  border-radius: 10px;
+}
+.txt-area{
+  margin-top: 10px;
+
+}
+.btn-edt-modal{
+  border: none;
+  background-color: #FE5472;
+  color: white;
+  border-radius: 10px;
+  width: 90px;
+  float:right;
+  margin-right: -15px;
+}
+
+.progresso-txt{
+  font-size: 18px;
+  color: #585858;
+  
+  
+}
+
+.progress-bar{
+  width: 80%;
+}
+
+.modal__fechar{
+  border: none;
+  border-radius: 10px;
+  color: #5E5D5D;
+  font-size: 15px;
+}
+.progresso_meta{
+  color: #585858;
+}

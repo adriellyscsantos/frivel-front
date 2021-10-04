@@ -33,7 +33,7 @@ const Sidebar = () => {
               </a>
             </li>
             <li>
-              <a className="s-sidebar__nav-link" href="#0">
+              <a className="s-sidebar__nav-link" href="/metas">
                 <div className="box__icons">
                   <FiTarget size={30} color="00816E" />
                 </div>

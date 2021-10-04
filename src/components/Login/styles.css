@@ -161,6 +161,8 @@
     margin-left: 20%;
     margin-top: -10%;
     margin-bottom: 5%;
+    max-width: 100%;
+    height: auto;
   }
   
   /*ANIMAÇÃO CSS PARA O CONTEÚDO*/
@@ -438,9 +440,11 @@
     }
 
     .logo {
+        background-size: cover;
+        display: block;
         max-width: 100%;
-        margin-top: 35px;
         height: auto;
+        margin-top: 35px;
     }
 
   }

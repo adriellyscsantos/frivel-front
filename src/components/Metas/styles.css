@@ -1,0 +1,77 @@
+body {
+    background-color: #edf0f1;
+}
+
+.btn-new-meta{
+    background-color:#0d6efd;
+    font-family: 'roboto' bold;
+    padding: 7px 5px;
+    font-size: 85% ;
+    border: none;
+    border-radius: 10px;
+    
+}
+.h2{
+    color:  #696969;	
+    font-family: 'roboto' bold;
+}
+.margin-d{
+    margin-top: 4rem;
+} 
+.roundedx{
+    border-radius: 10px;
+}
+.card-title{
+    color: teal;
+    font-size: 120%;
+    font-family:  roboto 'bold';
+    /*Width: 0px;*/
+    Height: 50px;
+    
+}
+
+.buttonvisualizar{
+   background-color: #00816E;
+   color: white;
+   font-family: 'roboto' bold;
+   border: none;
+   border-radius: 9px;
+   font-size: 12px;
+   padding: 2px 20px;
+
+   
+} 
+.space{
+    bottom: 60px;
+}
+
+.fa-bullseye{
+    color: #00816E;
+    
+    
+}
+.fa-trash-alt{
+    color: #00816E;
+    cursor: pointer;
+}
+.fa-calendar-alt{
+    color: #00816E;
+    margin-right: 10px;
+}
+.calendar{
+    color: #00816E;
+    font-size: 14px;
+}
+
+.trash{
+    border: transparent;
+    background-color: transparent;
+    color: teal;
+}
+.icones{
+    color: teal;
+    margin-top: -6px;    
+}
+.icon-warning{
+    color: red;
+}

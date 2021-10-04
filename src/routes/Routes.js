@@ -4,6 +4,8 @@ import Home from "../pages/home";
 import Cadastro from "../pages/cadastro";
 import Login from "../pages/login";
 import Gastos from "../pages/gastos";
+import Receitas from "../pages/receitas";
+
 
 const Routes = () => {
   return (
@@ -13,6 +15,7 @@ const Routes = () => {
         <Route path="/cadastro" component={Cadastro} />
         <Route path="/login" component={Login} />
         <Route path="/gastos" component={Gastos} />
+        <Route path="/receitas" component={Receitas} />
       </Switch>
     </BrowserRouter>
   );

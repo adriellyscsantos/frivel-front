@@ -38,9 +38,17 @@
   margin: 20px;
 }
 
-.botao-excluir__gastos {
+.botao-excluir__gastos,
+.botao-excluir__gastos:hover {
   border: none;
   background-color: #da291c;
+  padding: 5px;
   border-radius: 20px;
   color: #fff;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

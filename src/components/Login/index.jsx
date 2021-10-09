@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 const SignUp = () => {
@@ -13,9 +14,11 @@ const SignUp = () => {
         <p className="description description-primary">
           E inicie sua jornada conosco!
         </p>
-        <button id="signin" className="btn btn-primary">
-          Cadastrar
-        </button>
+        <Link to="/cadastro">
+          <button id="signin" className="btn btn-primary">
+            Cadastrar
+          </button>
+        </Link>
       </div>
       <div className="second-column">
         <h2 className="title title-second">Entre no Frivel</h2>
@@ -29,8 +32,9 @@ const SignUp = () => {
             <i className="far fa-envelope icon-modify"></i>
             <input type="text" placeholder="Senha" />
           </label>
-
-          <button className="btn btn-second ">entrar</button>
+          <Link to="/dashboard">
+            <button className="btn btn-second ">entrar</button>
+          </Link>
         </form>
       </div>
     </div>

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+}
+
+.pag__perfil {
+  display: flex;
+  background: #f5f5f5;
+}
+.menu__perfil {
+  width: 80px;
+  height: 100vh;
+  background: #00816e;
+}
+.container__perfil {
+  width: 1200px;
+  padding: 20px 40px;
+}
+
+.usuario__perfil {
+  width: 100%;
+  background: #00816e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px 20px;
+  color: white;
+}
+.dados-usuarios__perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.dados-usuarios__imagem {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+.dados-usuarios-texto__perfil {
+  font-size: 20px;
+}
+
+.editar__perfil {
+  font-size: 15px;
+  color: white;
+}
+
+.renda__perfil {
+  font-size: 40px;
+}

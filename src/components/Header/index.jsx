@@ -10,8 +10,8 @@ const Header = () => {
           <div className="header-nav">
             <div className="logotipo"> </div>
             <div className="header-items">
-              <Link to="/cadastro">
-                <p>Entrar</p>
+              <Link to="/login">
+                <button className="header-items__entrar">Entrar</button>
               </Link>
               <Link to="/cadastro">
                 <button className="header-items__button">Cadastre-se</button>
@@ -24,7 +24,9 @@ const Header = () => {
                 Gerenciando suas <p className="text-green">finanças</p>e
                 projetando as suas <p className="text-green"> metas futuras </p>
               </h1>
-              <button className="header-button">Conhecer</button>
+              <a className="header-button" href="#cards">
+                Conhecer
+              </a>
             </div>
 
             <div className="header-imagem"></div>

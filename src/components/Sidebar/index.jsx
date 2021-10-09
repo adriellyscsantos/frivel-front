@@ -16,12 +16,12 @@ const Sidebar = () => {
               <h3 className="s-sidebar__nav-link"> FRIVEL </h3>
             </li>
             <li>
-              <a className="s-sidebar__nav-link" href="#0">
+              <a className="s-sidebar__nav-link" href="/dashboard">
                 <div className="box__icons">
                   <AiOutlineEye size={30} color="00816E" />
                 </div>
 
-                <p> Geral </p>
+                <p> Home </p>
               </a>
             </li>
             <li>

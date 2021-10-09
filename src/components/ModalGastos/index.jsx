@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import { AiOutlineClose } from "react-icons/ai";
 
 const ModalGastos = () => {
+  const [inputValue, setInputValue] = useState("");
   const handleClick = () => {
-    alert("Gasto adicionado com sucesso!");
+    // alert("Gasto adicionado com sucesso!");
+  };
+
+  const handleInput = (e) => {
+    const values = e.target.value;
+    setInputValue(values);
+
+    if (values === "") {
+      alert("Por favor preencha o campo");
+    }
   };
   return (
     <>
@@ -19,7 +29,12 @@ const ModalGastos = () => {
             <div className="modal__form-content">
               <div>
                 <p>Gasto</p>
-                <input type="text" className="modal__form-input" />
+                <input
+                  type="text"
+                  className="modal__form-input"
+                  onChange={(e) => handleInput(e)}
+                  value={inputValue}
+                />
               </div>
               <div>
                 <p>Categoria</p>
@@ -34,9 +49,9 @@ const ModalGastos = () => {
               </div>
               <div>
                 <p>Tipo do gasto</p>
-                <input type="radio" name="fixo" value="fixo" />
+                <input type="radio" name="radio-tipo-gasto" value="fixo" />
                 <label for="dewey">Fixo</label>
-                <input type="radio" name="variavel" value="variavel" />
+                <input type="radio" name="radio-tipo-gasto" value="variavel" />
                 <label for="dewey">Variável</label>
               </div>
               <div>
@@ -47,7 +62,11 @@ const ModalGastos = () => {
           </form>
 
           <div className="modal__footer">
-            <button className="modal__footer-add" onClick={handleClick}>
+            <button
+              type="submit"
+              className="modal__footer-add"
+              onClick={handleClick}
+            >
               Adicionar
             </button>
           </div>

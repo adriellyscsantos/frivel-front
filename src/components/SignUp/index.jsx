@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 const SignUp = () => {
@@ -13,9 +14,11 @@ const SignUp = () => {
         <p className="description description-primary">
           por favor faça o login com suas informações pessoais
         </p>
-        <button id="signin" className="btn btn-primary">
-          Entrar
-        </button>
+        <Link to="/login">
+          <button id="signin" className="btn btn-primary">
+            Entrar
+          </button>
+        </Link>
       </div>
       <div className="second-column">
         <h2 className="title title-second">Criar conta</h2>

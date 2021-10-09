@@ -6,7 +6,6 @@ import { VscWarning } from "react-icons/vsc";
 const ModalExcluirMetas = () => {
   return (
     <>
-
       <div id="demo-modalexcluirmetas" className="modal">
         <div className="modal__content">
           <div className="row">
@@ -14,12 +13,15 @@ const ModalExcluirMetas = () => {
           </div>
           <br></br>
           <div className="row text-meio-modal-excluir">
-            Deseja realmente remover essa meta?
+            Deseja realmente remover esse item?
           </div>
           <br></br>
           <div className="row modal__footer">
             <div className="col-md-6">
-              <a href="#"> <button className="modal_meta-voltar">Voltar</button></a>
+              <a href="#">
+                {" "}
+                <button className="modal_meta-voltar">Voltar</button>
+              </a>
             </div>
             <div className="col-md-6">
               <button className="modal_meta-excluir">Remover</button>

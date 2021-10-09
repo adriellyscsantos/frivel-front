@@ -6,7 +6,7 @@ import Login from "../pages/login";
 import Gastos from "../pages/gastos";
 import Metas from "../pages/metas";
 import Receitas from "../pages/receitas";
-
+import Dashboard from "../pages/dashboard";
 
 const Routes = () => {
   return (
@@ -18,6 +18,7 @@ const Routes = () => {
         <Route path="/gastos" component={Gastos} />
         <Route path="/metas" component={Metas} />
         <Route path="/receitas" component={Receitas} />
+        <Route path="/dashboard" component={Dashboard} />
       </Switch>
     </BrowserRouter>
   );

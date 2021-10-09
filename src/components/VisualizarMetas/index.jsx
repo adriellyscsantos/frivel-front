@@ -9,14 +9,11 @@ const VisualizarMetas = () => {
 
       <div id="demo-visualizarmetas" className="modal">
         <div className="modal__content">
-          <h1 className="modal__title">Visualizar Meta</h1>
+          <h1 className="modal__title_visualizar">Visualizar Meta</h1>
           <div className="modal__form-content row">
             <div className="col-md-12 txt-area">
               <textarea rows="6" cols="50" className="modal__form-textarea">
               </textarea>
-            </div>
-            <div className="col-md-12">
-              <button className="btn-edt-modal">Editar</button>
             </div>
             <div className="col-md-12 progresso-txt">
               Progresso
@@ -29,7 +26,7 @@ const VisualizarMetas = () => {
               R$ 500,00 de R$ 900,00
             </div>
           </div>
-          <div className="modal__footer">
+          <div className="modal__footer__visualizar">
             <a href="#"><button className="modal__fechar">Fechar</button></a>
           </div>
 

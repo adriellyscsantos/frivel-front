@@ -6,9 +6,9 @@ const ModalMetas = () => {
   return (
     <>
 
-      <div id="demo-modal" className="modal">
+      <div id="demo-modal-editar-meta" className="modal">
         <div className="modal__content">
-          <h1 className="modal__title">Adicionar Meta</h1>
+          <h1 className="modal__title">Editar Meta</h1>
           <form className="modal__form">
             <div className="modal__form-content">
               <div>
@@ -36,9 +36,8 @@ const ModalMetas = () => {
           </form>
           <br></br>
           <div className="modal__footer">
-            <button className="modal__footer-add">Adicionar</button>
+            <button className="modal__footer-add">Editar</button>
           </div>
-
           <a href="#" className="modal__close">
             <AiOutlineClose size={20} />
           </a>

@@ -38,6 +38,8 @@
 }
 .modal__title {
   color: #00816e;
+  text-align: center !important;
+  padding: 0 !important;
 }
 .modal__content {
   border-radius: 10px;

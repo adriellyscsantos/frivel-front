@@ -13,7 +13,7 @@ const Sidebar = () => {
         <nav className="s-sidebar__nav">
           <ul>
             <li>
-              <h3 className="s-sidebar__nav-link"> FRIVEL </h3>
+              <div className="s-sidebar__nav-link title__sidebar"> FRIVEL </div>
             </li>
             <li>
               <a className="s-sidebar__nav-link" href="/dashboard">
@@ -41,7 +41,7 @@ const Sidebar = () => {
               </a>
             </li>
             <li>
-              <a className="s-sidebar__nav-link" href="receitas">
+              <a className="s-sidebar__nav-link" href="/receitas">
                 <div className="box__icons">
                   <FaMoneyBillAlt size={30} color="00816E" />
                 </div>
@@ -58,7 +58,9 @@ const Sidebar = () => {
             </li>
             <li>
               <div className="s-sidebar__nav-logout">
-                <p className="s-sidebar__nav-link"> sair </p>
+                <a className="s-sidebar__nav-link" href="/">
+                  <p>sair </p>{" "}
+                </a>
               </div>
             </li>
           </ul>

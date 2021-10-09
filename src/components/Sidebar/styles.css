@@ -51,7 +51,7 @@
 }
 
 .s-sidebar__nav-logout {
-  margin-top: 90px;
+  margin-top: 30px;
 }
 .box__icons {
   background-color: white;
@@ -62,6 +62,10 @@
   align-items: center;
   justify-content: center;
   margin: 10px auto;
+}
+
+.title__sidebar {
+  font-size: 20px;
 }
 /* Mobile First */
 @media (min-width: 42em) {
@@ -83,7 +87,7 @@
   /* Sidebar */
 
   .s-sidebar__nav {
-    width: 6em;
+    width: 5em;
   }
 
   .s-sidebar__nav ul {

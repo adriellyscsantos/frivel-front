@@ -36,10 +36,10 @@
   visibility: visible;
   opacity: 1;
 }
-.modal__title {
+.modal__title_visualizar {
   color: #00816e;
   font-size: 30px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 .modal__content {
   border-radius: 10px;
@@ -51,8 +51,9 @@
   text-align: left;
 }
 
-.modal__footer {
+.modal__footer__visualizar {
   text-align: right;
+  padding-right: 15px;
 }
 
 .modal__form {
@@ -84,15 +85,6 @@
   margin-top: 10px;
 
 }
-.btn-edt-modal{
-  border: none;
-  background-color: #FE5472;
-  color: white;
-  border-radius: 10px;
-  width: 90px;
-  float:right;
-  margin-right: -15px;
-}
 
 .progresso-txt{
   font-size: 18px;
@@ -110,6 +102,9 @@
   border-radius: 10px;
   color: #5E5D5D;
   font-size: 15px;
+  padding-left: 15px;
+  padding-right: 17px;
+  
 }
 .progresso_meta{
   color: #585858;

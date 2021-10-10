@@ -49,7 +49,7 @@ const Sidebar = () => {
               </a>
             </li>
             <li>
-              <a className="s-sidebar__nav-link" href="#0">
+              <a className="s-sidebar__nav-link" href="/relatorios">
                 <div className="box__icons">
                   <CgClipboard size={30} color="00816E" />
                 </div>

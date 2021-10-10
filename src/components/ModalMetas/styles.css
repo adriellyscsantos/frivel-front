@@ -36,9 +36,9 @@
   visibility: visible;
   opacity: 1;
 }
-.modal__title {
+.modal__title-add {
   color: #00816e;
-  padding-left: 50px;
+  margin-left: 60px;
 }
 .modal__content {
   border-radius: 10px;
@@ -63,8 +63,8 @@
   border: none;
   outline: none;
   font-weight: bold;
-  margin-left: 20px;
   text-decoration: none;
+  margin-right: 0px;
   cursor: pointer;
 }
 .modal__form {

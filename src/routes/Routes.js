@@ -7,6 +7,7 @@ import Gastos from "../pages/gastos";
 import Metas from "../pages/metas";
 import Receitas from "../pages/receitas";
 import Dashboard from "../pages/dashboard";
+import Relatorios from "../pages/relatorios";
 
 const Routes = () => {
   return (
@@ -19,6 +20,7 @@ const Routes = () => {
         <Route path="/metas" component={Metas} />
         <Route path="/receitas" component={Receitas} />
         <Route path="/dashboard" component={Dashboard} />
+        <Route path="/relatorios" component={Relatorios} />
       </Switch>
     </BrowserRouter>
   );

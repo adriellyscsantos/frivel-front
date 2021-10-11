@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Metas from "./metas.jsx";
+import GraficoBarra from "../GraficoBarra";
 
 const GraficosPerfil = () => {
   return (
@@ -8,9 +9,11 @@ const GraficosPerfil = () => {
       <section className="cards__perfil-graficos">
         <div className="card__perfil-graficos">
           <div>
-            <p className="card__perfil-titulo">Balanço dos ultimos 5 meses</p>
+            <p className="card__perfil-titulo">Balanço dos ultimos 3 meses</p>
 
-            <div className="card__perfil-grafico1"> </div>
+            <div>
+              <GraficoBarra />
+            </div>
           </div>
         </div>
         <div className="card__perfil-graficos">

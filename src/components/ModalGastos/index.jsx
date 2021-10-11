@@ -171,7 +171,7 @@ const ModalGastos = () => {
 
                 <div className="modal__footer">
                   <button className="modal__footer-add" type="submit">
-                    Cadastrar
+                    Adicionar
                   </button>
                 </div>
               </div>

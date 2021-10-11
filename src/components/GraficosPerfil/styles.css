@@ -29,6 +29,13 @@
   font-weight: bold;
 }
 
+.card__perfil-grafico1 {
+  background: url("../../assets/graficobalanco.png");
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
 .titulo__perfil-metas {
   color: #5e5d5d;
 }
@@ -58,8 +65,10 @@
 }
 
 .perfil-graficos_img {
+  background: url("../../assets/graficoredondo.png");
+  background-size: cover;
   width: 30%;
-  /* height: 100px; */
+  height: 147px;
 }
 
 .card__perfil-botao {

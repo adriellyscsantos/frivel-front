@@ -8,15 +8,14 @@ const ContainerPerfil = (props) => {
     <div>
       <section className="usuario__perfil">
         <div className="dados-usuarios__perfil">
-          <img
-            className="dados-usuarios__imagem"
-            src="https://c4.wallpaperflare.com/wallpaper/145/591/827/anime-zero-no-tsukaima-louise-francoise-le-blanc-de-la-valliere-wallpaper-preview.jpg"
-            alt=""
-          />
+          <div className="dados-usuarios__imagem"> </div>
           <div className="dados-usuarios-texto__perfil">
             <p>Fulana de Tal</p>
             <p>Recife, PE</p>
-            <a className="editar__perfil" href="#demo-modal-editar-perfil"><button type="button" className="btn btn-new-meta btn-sm"><i aria-hidden="true"></i>Editar Perfil</button>
+            <a className="editar__perfil" href="#demo-modal-editar-perfil">
+              <button type="button" className="btn btn-new-meta btn-sm">
+                <i aria-hidden="true"></i>Editar Perfil
+              </button>
             </a>
           </div>
         </div>

@@ -33,6 +33,8 @@
   gap: 20px;
 }
 .dados-usuarios__imagem {
+  background: url("../../assets/louise.jpg");
+  background-size: cover;
   border-radius: 100px;
   width: 150px;
   height: 150px;

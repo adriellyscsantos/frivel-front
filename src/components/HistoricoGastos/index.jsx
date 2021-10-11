@@ -7,7 +7,7 @@ const HistoricoGastos = (props) => {
     <div className="container__historico">
       <div className="container-box__historico">
         <div>
-          <h3 className="titulo__historico">Historico de gastos</h3>
+          <h3 className="titulo__historico">Histórico mensal de gastos</h3>
         </div>
 
         <div className="box-gastos__historico">

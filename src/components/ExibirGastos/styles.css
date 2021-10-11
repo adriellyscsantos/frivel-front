@@ -32,7 +32,7 @@
 }
 .borda-box__gastos:not(:last-child) {
   border-top: 0.0625rem solid #ddd;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 .box-gastos__gastos {
   margin: 20px;
@@ -51,4 +51,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.box__botoesgastos {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

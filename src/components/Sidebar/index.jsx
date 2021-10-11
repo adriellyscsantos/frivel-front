@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { AiOutlineEye } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { FiTarget } from "react-icons/fi";
 import { FaMoneyBillAlt } from "react-icons/fa";
@@ -18,7 +18,7 @@ const Sidebar = () => {
             <li>
               <a className="s-sidebar__nav-link" href="/dashboard">
                 <div className="box__icons">
-                  <AiOutlineEye size={30} color="00816E" />
+                  <AiOutlineHome size={30} color="00816E" />
                 </div>
 
                 <p> Home </p>

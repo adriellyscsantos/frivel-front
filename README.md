@@ -1,7 +1,5 @@
 # Contribuindo
 
-Cada integrante da equipe deverá criar uma branch com o seu nome para enviar as suas alterações.
-
 ## Guia de Commit
 
 Padronizamos a forma de escrita dos commits. O objetivo é criar **mensagens mais legíveis** e que passem facilmente o histórico do projeto.
@@ -14,7 +12,7 @@ Padronizamos a forma de escrita dos commits. O objetivo é criar **mensagens mai
 ### Formato da mensagem do commit
 
 ```
-[Tag] Título Relevante do Commit 
+[Tag] Título Relevante do Commit
 
 Mensagem do commit. Geralmente explicando o que foi alterado,
 removido ou adicionado e possíveis detalhes de implementação
@@ -39,5 +37,4 @@ O gerenciamento de dependências de Front-end fica a cargo do **Yarn**.
 ### Rodar o projeto
 
 Com o node instalado, para iniciar o projeto use os comandos
- `yarn install && yarn start ` 
- 
+`para instalar as dependencias digite: yarn install e em seguida use yarn start para rodar o projeto. `

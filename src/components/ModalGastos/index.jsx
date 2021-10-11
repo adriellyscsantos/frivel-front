@@ -8,6 +8,7 @@ const ModalGastos = () => {
     valor: "",
     categoria: "",
     tipo: "",
+    data: "",
   });
 
   const [status, setStatus] = useState({
@@ -35,6 +36,7 @@ const ModalGastos = () => {
         valor: "",
         categoria: "",
         tipo: "",
+        data: "",
       });
     } else {
       setStatus({
@@ -48,7 +50,7 @@ const ModalGastos = () => {
     if (!user.gasto)
       return setStatus({
         type: "error",
-        mensagem: " Necessário preencher o campo: Gasto!",
+        mensagem: " Necessário preencher o campo: Descrição!",
       });
 
     if (!user.categoria)
@@ -66,7 +68,11 @@ const ModalGastos = () => {
         type: "error",
         mensagem: " Necessário preencher o campo: Valor!",
       });
-
+    if (!user.data)
+      return setStatus({
+        type: "error",
+        mensagem: " Necessário preencher o campo: Data Desejada!",
+      });
     return true;
   }
 
@@ -97,8 +103,8 @@ const ModalGastos = () => {
             )}
 
             <form className="modal__form" onSubmit={addUser}>
-              <div className="modal__form-content">
-                <p>Gasto: </p>
+              <div className="modal__form-content-gastos">
+                <p>Descrição </p>
                 <input
                   className="modal__form-input"
                   type="text"
@@ -146,12 +152,23 @@ const ModalGastos = () => {
                 <p>Valor: </p>
                 <input
                   className="modal__form-input"
-                  type="text"
+                  type="number"
                   name="valor"
                   onChange={valueInput}
                   value={user.valor}
-                  placeholder="R$ 000,00"
                 />
+
+                <div>
+                  <p>Data do gasto</p>
+                  <input
+                    type="date"
+                    name="data"
+                    onChange={valueInput}
+                    value={user.data}
+                    className="modal__form-input"
+                  ></input>
+                </div>
+
                 <div className="modal__footer">
                   <button className="modal__footer-add" type="submit">
                     Cadastrar

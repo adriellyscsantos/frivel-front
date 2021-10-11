@@ -12,7 +12,7 @@ const VisualizarMetas = () => {
           <h1 className="modal__title_visualizar">Visualizar Meta</h1>
           <div className="modal__form-content row">
             <div className="col-md-12 txt-area">
-              <textarea rows="6" cols="50" className="modal__form-textarea">
+              <textarea rows="6" cols="50" className="modal__form-textarea" disabled>
               </textarea>
             </div>
             <div className="col-md-12 progresso-txt">

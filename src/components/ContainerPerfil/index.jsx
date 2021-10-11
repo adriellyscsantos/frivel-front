@@ -13,7 +13,7 @@ const ContainerPerfil = (props) => {
             <p>Fulana de Tal</p>
             <p>Recife, PE</p>
             <a className="editar__perfil" href="#demo-modal-editar-perfil">
-              <button type="button" className="btn btn-new-meta btn-sm">
+              <button type="button" className="btn-new-edit btn-sm">
                 <i aria-hidden="true"></i>Editar Perfil
               </button>
             </a>

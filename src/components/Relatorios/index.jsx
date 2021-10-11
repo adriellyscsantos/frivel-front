@@ -23,9 +23,9 @@ const Relatorios = () => {
                             <select className="float-end select-relatorio" defaultValue={6}>
                                 <option value="1">Janeiro</option>
                                 <option value="2">Fevereiro</option>
-                                <option value="3">Maio</option>
-                                <option value="4">Março</option>
-                                <option value="5">Julho</option>
+                                <option value="3">Março</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Maio</option>
                                 <option value="6" >Junho</option>
                                 <option value="7">Julho</option>
                                 <option value="8">Agosto</option>

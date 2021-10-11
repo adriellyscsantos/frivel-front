@@ -52,3 +52,12 @@
 .renda__perfil {
   font-size: 40px;
 }
+.btn-new-edit{
+  background-color:  #fe5472;
+  color: white;
+  font-family: "roboto" bold;
+  padding: 7px 5px;
+  font-size: 85%;
+  border: none;
+  border-radius: 10px;
+}

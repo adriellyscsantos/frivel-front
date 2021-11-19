@@ -1,13 +1,10 @@
-import axios from "axios";
-import React, { useEffect, useState, useCallback } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
 import "./styles.css";
 
 const SignUp = () => {
-  const [user, setUser] = useState();
-
   const {
     register,
     formState: { errors },

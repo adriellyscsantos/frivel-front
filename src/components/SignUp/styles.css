@@ -52,7 +52,7 @@
 .btn {
   border-radius: 15px;
   text-transform: uppercase;
-  color: #fff;
+  color: #58af9b;
   font-size: 10px;
   padding: 10px 50px;
   cursor: pointer;
@@ -75,6 +75,17 @@
   background-color: #00816e;
   border: 1px solid #00816e;
   transition: background-color 0.5s;
+  color: #00816e;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
 }
 .btn-second:hover {
   background-color: #fff;

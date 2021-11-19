@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState, useCallback } from "react";
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
 import "./styles.css";
@@ -6,19 +8,26 @@ import "./styles.css";
 const SignUp = () => {
   const [user, setUser] = useState();
 
-  useEffect(() => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+  const onSubmit = (data) => {
     api
-      .get("/usuario/1")
-      .then((response) => response.json())
-      .then((r) => {
-        setUser(r);
-        console.log(r, "oi");
+      .post(
+        `/usuario/novousuario?nome=${data.nome}&email=${data.email}&senha=${data.senha}`,
+        data
+      )
+      .then(() => {
+        alert("Usuário cadastrado com sucesso!");
       })
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
+      .catch(() => {
+        alert("Erro");
       });
-      
-  }, []);
+    console.log(data);
+  };
 
   return (
     <div className="content first-content">
@@ -40,29 +49,27 @@ const SignUp = () => {
       </div>
       <div className="second-column">
         <h2 className="title title-second">Criar conta</h2>
-        <form className="form">
-          <label className="label-input" for="">
-            <i className="far fa-user icon-modify"></i>
-            <input type="text" placeholder="Nome" />
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
+          <label className="label-input">
+            <input name="nome" {...register("nome")} placeholder="Nome" />
           </label>
-
-          <label className="label-input" for="">
-            <i className="far fa-envelope icon-modify"></i>
-            <input type="email" placeholder="E-mail" />
+          {errors.nome?.type === "required" && "campo Nome é obrigatório."}
+          <label className="label-input">
+            <input
+              name="email"
+              {...register("email")}
+              type="email"
+              placeholder="Email"
+            />
           </label>
+          {errors.email && "campo Email é obrigatório."}
 
-          <label className="label-input" for="">
-            <i className="fas fa-lock icon-modify"></i>
-            <input type="password" placeholder="Senha" />
+          <label className="label-input">
+            <input {...register("senha")} placeholder="Senha" />
           </label>
-
-          <button className="btn btn-second ">cadastrar</button>
+          {errors.senha && "campo Senha é obrigatório."}
+          <input name="senha" className=" btn-second" type="submit" />
         </form>
-        {/* {user.map((item) => (
-          <div key={item.id}>
-            <p>{item.nome}</p>
-          </div>
-        ))} */}
       </div>
     </div>
   );

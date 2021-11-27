@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import "./styles.css";
+import api from "../../services/api";
 import { AiOutlineClose } from "react-icons/ai";
-
 
 const ModalReceitas = () => {
   const [user, setUser] = useState({
@@ -30,7 +31,7 @@ const ModalReceitas = () => {
       });
       setUser({
         valor: "",
-        tipo: ""
+        tipo: "",
       });
     } else {
       setStatus({
@@ -38,8 +39,6 @@ const ModalReceitas = () => {
         mensagem: "Erro: Receita não cadastrada !",
       });
     }
-    
-    
   };
 
   function validate() {
@@ -57,6 +56,26 @@ const ModalReceitas = () => {
     return true;
   }
 
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    api
+      .post(
+        `/usuario/novousuario?nome=${data.nome}&email=${data.email}&senha=${data.senha}`,
+        data
+      )
+      .then(() => {
+        alert("Usuário cadastrado com sucesso!");
+      })
+      .catch(() => {
+        alert("Erro");
+      });
+    console.log(data);
+  };
 
   return (
     <>
@@ -86,6 +105,14 @@ const ModalReceitas = () => {
 
             <form className="modal__form" onSubmit={addUser}>
               <div className="modal__form-content">
+                <p>Descrição: </p>
+                <input
+                  className="modal__form-input"
+                  type="text"
+                  onChange={valueInput}
+                  name="descricao"
+                  value={user.tipo}
+                />
                 <p>Tipo: </p>
                 <input
                   className="modal__form-input"
@@ -94,8 +121,6 @@ const ModalReceitas = () => {
                   name="tipo"
                   value={user.tipo}
                 />
-
-                  
 
                 <p>Valor: </p>
                 <input

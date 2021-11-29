@@ -62,10 +62,15 @@ const SignUp = () => {
           {errors.email && "campo Email é obrigatório."}
 
           <label className="label-input">
-            <input {...register("senha")} placeholder="Senha" />
+            <input
+              name="senha"
+              {...register("senha")}
+              placeholder="Senha"
+              type="password"
+            />
           </label>
           {errors.senha && "campo Senha é obrigatório."}
-          <input name="senha" className=" btn-second" type="submit" />
+          <input className=" btn-second" type="submit" />
         </form>
       </div>
     </div>

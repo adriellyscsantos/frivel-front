@@ -1,8 +1,30 @@
 import React, { useState } from "react";
 import "./styles.css";
+import { useForm } from "react-hook-form";
+import api from "../../services/api";
 import { AiOutlineClose } from "react-icons/ai";
 
 const ModalGastos = () => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    api
+      .post(
+        `/gastos/novogastos?vlGastos=${data.vlGastos}&descricao=${data.descricao}&recorrencia=${data.recorrencia}&dtGastos=${data.dtGastos}&dtVencimento=${data.dtVencimento}&parcelas=${data.parcelas}&juros=${data.juros}`,
+        data
+      )
+      .then(() => {
+        alert("Usuário cadastrado com sucesso!");
+      })
+      .catch(() => {
+        alert("Erro");
+      });
+  };
+
   const [user, setUser] = useState({
     gasto: "",
     valor: "",
@@ -102,10 +124,10 @@ const ModalGastos = () => {
               ""
             )}
 
-            <form className="modal__form" onSubmit={addUser}>
+            <form className="modal__form" onSubmit={handleSubmit(onSubmit)}>
               <div className="modal__form-content-gastos">
                 <p>Descrição </p>
-                <input
+                <input {...register("descricao") }
                   className="modal__form-input"
                   type="text"
                   name="gasto"
@@ -115,7 +137,7 @@ const ModalGastos = () => {
                 <div>
                   <p>Categoria</p>
 
-                  <select
+                  <select {...register("")}
                     id="cars"
                     name="categoria"
                     onChange={valueInput}
@@ -134,7 +156,7 @@ const ModalGastos = () => {
 
                 <div>
                   <p>Tipo do gasto</p>
-                  <select
+                  <select {...register("")}
                     id="cars"
                     name="tipo"
                     onChange={valueInput}
@@ -150,7 +172,7 @@ const ModalGastos = () => {
                 </div>
 
                 <p>Valor: </p>
-                <input
+                <input {...register("vlGastos")}
                   className="modal__form-input"
                   type="number"
                   name="valor"
@@ -160,7 +182,7 @@ const ModalGastos = () => {
 
                 <div>
                   <p>Data do gasto</p>
-                  <input
+                  <input {...register("dtGastos")}
                     type="date"
                     name="data"
                     onChange={valueInput}
@@ -170,9 +192,10 @@ const ModalGastos = () => {
                 </div>
 
                 <div className="modal__footer">
-                  <button className="modal__footer-add" type="submit">
+                  {/* <button className="modal__footer-add" type="submit">
                     Adicionar
-                  </button>
+                  </button> */}
+                    <input className="modal__footer-add" type="submit" />
                 </div>
               </div>
             </form>

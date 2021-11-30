@@ -131,8 +131,6 @@ const ModalGastos = () => {
                   className="modal__form-input"
                   type="text"
                   name="gasto"
-                  onChange={valueInput}
-                  value={user.gasto}
                 />
                 <div>
                   <p>Categoria</p>
@@ -140,8 +138,6 @@ const ModalGastos = () => {
                   <select {...register("")}
                     id="cars"
                     name="categoria"
-                    onChange={valueInput}
-                    value={user.categoria}
                     className="modal__form-input"
                   >
                     <option value="selecionarcategoria" disabled selected>
@@ -159,8 +155,6 @@ const ModalGastos = () => {
                   <select {...register("")}
                     id="cars"
                     name="tipo"
-                    onChange={valueInput}
-                    value={user.tipo}
                     className="modal__form-input"
                   >
                     <option value="selecionartipo" disabled selected>
@@ -185,8 +179,6 @@ const ModalGastos = () => {
                   <input {...register("dtGastos")}
                     type="date"
                     name="data"
-                    onChange={valueInput}
-                    value={user.data}
                     className="modal__form-input"
                   ></input>
                 </div>

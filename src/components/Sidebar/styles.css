@@ -93,4 +93,13 @@
   .s-sidebar__nav ul {
     top: 1.3em;
   }
+
+  .faq_sm{
+   cursor: pointer;
+   color: white;
+   margin-top: 20px;
+   text-decoration: underline;
+   font-size: 12px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 }

@@ -1,0 +1,79 @@
+.title_faq{
+    color: black;
+    margin-top: 50px;
+}
+.faq_card{
+    border-radius: 20px;
+
+}
+.sub_faq{
+    color: teal;
+    font-size:25px;
+    margin-top: 70px;
+    margin-right: 800px;
+}
+.per_faq{
+    color: teal;
+    font-size:25px;
+    margin-top: 50px;
+    margin-right: 720px;
+}
+.subtitle_faq{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right: 800px;
+    color: grey;
+}
+.icon_conver{
+    color: teal;
+    margin-right: 620px;
+    margin-top: -35px;
+}
+.gif_faq{
+    width: 130px;
+    border-radius: 100px;
+}
+
+.test{
+    margin-right: 200px;
+}
+.videofaq{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.titletext{
+    color: teal;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.text{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+.audio-t{
+    
+    margin-top: 30px;
+    margin-left: 400px;
+}
+.imgmatri{
+    margin-top: 70px;
+    width: 200px;
+    border-radius: 20px;
+    margin-right: 750px;
+}
+.imgvet{
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+.musica{
+    margin-top: 90px;
+}
+.titletext-m{
+    color: teal;
+    margin-top: 40px;
+    margin-bottom: -70px; 
+    margin-left: 100px;
+}

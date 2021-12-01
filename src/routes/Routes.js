@@ -8,6 +8,7 @@ import Metas from "../pages/metas";
 import Receitas from "../pages/receitas";
 import Dashboard from "../pages/dashboard";
 import Relatorios from "../pages/relatorios";
+import Faq from "../pages/faq";
 
 const Routes = () => {
   return (
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route path="/receitas" component={Receitas} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/relatorios" component={Relatorios} />
+        <Route path="/faq" component={Faq} />
       </Switch>
     </BrowserRouter>
   );

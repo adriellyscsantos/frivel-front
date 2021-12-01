@@ -57,6 +57,11 @@ const Sidebar = () => {
               </a>
             </li>
             <li>
+            <a className="s-sidebar__nav-link" href="/faq">
+              <p className="faq_sm">FAQ</p>
+              </a>
+              </li>
+              <li>
               <div className="s-sidebar__nav-logout">
                 <a className="s-sidebar__nav-link" href="/">
                   <p>sair </p>{" "}

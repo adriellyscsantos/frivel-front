@@ -1,23 +1,25 @@
 import React from "react";
 import "./styles.css";
+import api from "../../services/api";
 import { AiOutlineClose } from "react-icons/ai";
-import { ProgressBar } from 'react-bootstrap';
+import { ProgressBar } from "react-bootstrap";
 
 const VisualizarMetas = () => {
   return (
     <>
-
       <div id="demo-visualizarmetas" className="modal">
         <div className="modal__content">
           <h1 className="modal__title_visualizar">Visualizar Meta</h1>
           <div className="modal__form-content row">
             <div className="col-md-12 txt-area">
-              <textarea rows="6" cols="50" className="modal__form-textarea" disabled>
-              </textarea>
+              <textarea
+                rows="6"
+                cols="50"
+                className="modal__form-textarea"
+                disabled
+              ></textarea>
             </div>
-            <div className="col-md-12 progresso-txt">
-              Progresso
-            </div>
+            <div className="col-md-12 progresso-txt">Progresso</div>
             <p></p>
             <div className="progresso-modal col-md-12">
               <ProgressBar variant="success" now={60} />
@@ -27,7 +29,9 @@ const VisualizarMetas = () => {
             </div>
           </div>
           <div className="modal__footer__visualizar">
-            <a href="#"><button className="modal__fechar">Fechar</button></a>
+            <a href="#">
+              <button className="modal__fechar">Fechar</button>
+            </a>
           </div>
 
           <a href="#" className="modal__close">

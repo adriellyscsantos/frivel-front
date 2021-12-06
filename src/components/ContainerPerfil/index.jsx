@@ -10,7 +10,7 @@ const ContainerPerfil = (props) => {
         <div className="dados-usuarios__perfil">
           <div className="dados-usuarios__imagem"> </div>
           <div className="dados-usuarios-texto__perfil">
-            <p>Fulana de Tal</p>
+            <p>Isabela Almeida</p>
             <p>Recife, PE</p>
             <a className="editar__perfil" href="#demo-modal-editar-perfil">
               <button type="button" className="btn-new-edit btn-sm">

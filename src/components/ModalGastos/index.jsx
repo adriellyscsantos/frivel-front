@@ -14,7 +14,7 @@ const ModalGastos = () => {
   const onSubmit = (data) => {
     api
       .post(
-        `/gastos/novogastos?&descricao=${data.descricao}&categoria=${data.categoria}&tpGastos=${data.tpGastos}&vlGastos=${data.vlGastos}&dtGastos=${data.dtGastos}`,
+        `/gastos/novogastos?&descricao=${data.descricao}&categoria=${data.categoria}&tipoDoGasto=${data.tipoDoGasto}&valor=${data.valor}&dtGastos=${data.dtGastos}`,
         data
       )
       .then(() => {
@@ -152,7 +152,7 @@ const ModalGastos = () => {
 
                 <div>
                   <p>Tipo do Gasto</p>
-                  <select {...register("tpGastos")}
+                  <select {...register("tipoDoGasto")}
                     id="cars"
                     name="tipo"
                     className="modal__form-input"
@@ -166,7 +166,7 @@ const ModalGastos = () => {
                 </div>
 
                 <p>Valor: </p>
-                <input {...register("vlGastos")}
+                <input {...register("valor")}
                   className="modal__form-input"
                   type="number"
                   name="valor"

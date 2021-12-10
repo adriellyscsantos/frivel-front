@@ -154,7 +154,7 @@ const ModalMetas = () => {
                 <div className="col-md-6">
                   <p>Data Desejada</p>
                   <input
-                    type="text"
+                    type="date"
                     name="dtMeta"
                     {...register("dtMeta")}
                     // onChange={valueInput}

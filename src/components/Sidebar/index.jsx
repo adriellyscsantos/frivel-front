@@ -13,7 +13,7 @@ const Sidebar = () => {
         <nav className="s-sidebar__nav">
           <ul>
             <li>
-              <div className="s-sidebar__nav-link title__sidebar"> FRIVEL </div>
+              <div className="s-sidebar__nav-link title__sidebar"> Frivel </div>
             </li>
             <li>
               <a className="s-sidebar__nav-link" href="/dashboard">

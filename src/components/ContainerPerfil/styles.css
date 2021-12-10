@@ -38,6 +38,7 @@
   border-radius: 100px;
   width: 150px;
   height: 150px;
+  background-position: center;
 }
 
 .dados-usuarios-texto__perfil {
@@ -52,8 +53,8 @@
 .renda__perfil {
   font-size: 40px;
 }
-.btn-new-edit{
-  background-color:  #fe5472;
+.btn-new-edit {
+  background-color: #fe5472;
   color: white;
   font-family: "roboto" bold;
   padding: 7px 5px;

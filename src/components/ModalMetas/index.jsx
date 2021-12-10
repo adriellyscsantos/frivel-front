@@ -89,7 +89,7 @@ const ModalMetas = () => {
         alert("Meta cadastrada com sucesso!");
       })
       .catch(() => {
-        alert("Erro");
+        alert("Erro ao cadastrar meta.");
       });
   };
 

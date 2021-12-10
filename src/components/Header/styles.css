@@ -15,13 +15,15 @@
   justify-content: space-between;
   align-items: center;
   /* padding: 10px 210px; */
+
+  margin-top: 10px;
 }
 
 .logotipo {
-  background: url("../../assets/logotipo.svg");
+  background: url("../../assets/logo666.png");
   background-size: cover;
-  width: 100px;
-  height: 80px;
+  width: 141px;
+  height: 35px;
 }
 
 .header-items {
@@ -95,7 +97,7 @@
   background: url("../../assets/imagem-header.svg");
   background-size: cover;
   width: 550px;
-  height: 306px;
+  height: 330px;
   margin-top: 40px;
 }
 

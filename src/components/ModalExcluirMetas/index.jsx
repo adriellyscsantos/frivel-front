@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import api from "../../services/api";
 import "./styles.css";
 import { AiOutlineClose } from "react-icons/ai";
 import { VscWarning } from "react-icons/vsc";
 
 const ModalExcluirMetas = () => {
-  const handleClick = () => {
-    alert("removido com sucesso!");
+  // const handleClick = () => {
+  //   alert("removido com sucesso!");
+  // };
+
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+  const onSubmit = () => {
+    api
+      .delete(`/meta/1`)
+      .then(() => {
+        alert("Meta excluída com sucesso!");
+      })
+      .catch(() => {
+        alert("Erro ao excluir meta.");
+      });
   };
+
   return (
     <>
       <div id="demo-modalexcluirmetas" className="modal">
@@ -25,10 +45,12 @@ const ModalExcluirMetas = () => {
                 <button className="modal_meta-voltar">Voltar</button>
               </a>
             </div>
+
             <div className="col-md-6">
-              <button onClick={handleClick} className="modal_meta-excluir">
-                Remover
-              </button>
+              <form className="modal__form" onSubmit={handleSubmit(onSubmit)}>
+                <button className="modal_meta-excluir">Remover</button>
+                <input className="d-none" type="submit" />
+              </form>
             </div>
           </div>
           <a href="#" className="modal__close">

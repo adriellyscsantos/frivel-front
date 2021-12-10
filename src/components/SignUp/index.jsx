@@ -21,7 +21,7 @@ const SignUp = () => {
         alert("Usuário cadastrado com sucesso!");
       })
       .catch(() => {
-        alert("Erro");
+        alert("Erro ao cadastrar usuário.");
       });
     console.log(data);
   };

@@ -6,11 +6,13 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const ModalReceitas = () => {
   const [user, setUser] = useState({
+    descricao: "",
     valor: "",
     tipo: "",
   });
 
   const [status, setStatus] = useState({
+    descricao: "",
     type: "",
     mensagem: "",
   });
@@ -30,6 +32,7 @@ const ModalReceitas = () => {
         mensagem: "Receita cadastrada com sucesso!",
       });
       setUser({
+        descricao: "",
         valor: "",
         tipo: "",
       });
@@ -42,6 +45,12 @@ const ModalReceitas = () => {
   };
 
   function validate() {
+    if (!user.descricao)
+      return setStatus({
+        type: "error",
+        mensagem: " Necessário preencher o campo: Descrição!",
+      });
+
     if (!user.valor)
       return setStatus({
         type: "error",
@@ -53,6 +62,8 @@ const ModalReceitas = () => {
         mensagem: " Necessário preencher o campo: Tipo!",
       });
 
+    
+    onSubmit(user);
     return true;
   }
 
@@ -63,18 +74,21 @@ const ModalReceitas = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    let dataAtual = new Date();
+    dataAtual = dataAtual.toLocaleDateString();
+    data.valor = data.valor.replace(/,/g, '.')
     api
       .post(
-        `/usuario/novousuario?nome=${data.nome}&email=${data.email}&senha=${data.senha}`,
+        `/receita/novareceita?descricao=${data.descricao}&valorReceita=${data.valor}&dataReceita=${dataAtual}`,
         data
       )
       .then(() => {
-        alert("Usuário cadastrado com sucesso!");
+        return true;
       })
-      .catch(() => {
-        alert("Erro");
+      .catch((e) => {
+        console.log(e);
       });
-    console.log(data);
+    
   };
 
   return (
@@ -111,17 +125,14 @@ const ModalReceitas = () => {
                   type="text"
                   onChange={valueInput}
                   name="descricao"
-                  value={user.tipo}
+                  value={user.descricao}
                 />
-                <p>Tipo: </p>
-                <input
-                  className="modal__form-input"
-                  type="text"
-                  onChange={valueInput}
-                  name="tipo"
-                  value={user.tipo}
-                />
-
+                <p>Tipo:
+                <select className="select-receitas" defaultValue={2}>
+                                <option value="1">Fixo</option>
+                                <option value="2">Variável</option>
+                            </select>
+                </p>
                 <p>Valor: </p>
                 <input
                   className="modal__form-input"

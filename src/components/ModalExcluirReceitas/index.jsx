@@ -5,11 +5,11 @@ import { VscWarning } from "react-icons/vsc";
 
 const ModalExcluirReceitas = () => {
   const handleClick = () => {
-    alert("removido com sucesso!");
+    
   };
   return (
     <>
-      <div id="#demo-modalexcluirreceitas" className="modal">
+      <div id="demo-modalexcluirReceitas" className="modal">
         <div className="modal__content">
           <div className="row">
             <VscWarning className="icon-warning" size={50} />

@@ -49,10 +49,10 @@ const Relatorios = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td className="semLinha_esquerda">04/06/2021</td>
-                                    <td>Despeza</td>
-                                    <td>R$ 40,00</td>
-                                    <td className="semLinha_direita">Lazer</td>
+                                    <td className="semLinha_esquerda">01/06/2021</td>
+                                    <td>Gasolina</td>
+                                    <td>R$ 150,00</td>
+                                    <td className="semLinha_direita">Despesa</td>
                                 </tr>
                                 <tr>
                                     <td className="semLinha_esquerda">04/06/2021</td>
@@ -61,22 +61,22 @@ const Relatorios = () => {
                                     <td className="semLinha_direita">Entrada</td>
                                 </tr>
                                 <tr>
-                                    <td className="semLinha_esquerda">04/06/2021</td>
-                                    <td>Despeza</td>
-                                    <td>R$ 40,00</td>
-                                    <td className="semLinha_direita">Lazer</td>
+                                    <td className="semLinha_esquerda">05/06/2021</td>
+                                    <td>Energia Elétrica</td>
+                                    <td>R$ 120,00</td>
+                                    <td className="semLinha_direita">Despesa</td>
                                 </tr>
                                 <tr>
-                                    <td className="semLinha_esquerda">04/06/2021</td>
-                                    <td>Despeza</td>
-                                    <td>R$ 40,00</td>
-                                    <td className="semLinha_direita">Lazer</td>
-                                </tr>
-                                <tr>
-                                    <td className="semLinha_esquerda">04/06/2021</td>
-                                    <td>Despeza</td>
+                                    <td className="semLinha_esquerda">09/06/2021</td>
+                                    <td>Compesa</td>
                                     <td>R$ 80,00</td>
-                                    <td className="semLinha_direita">Lazer</td>
+                                    <td className="semLinha_direita">Despesa</td>
+                                </tr>
+                                <tr>
+                                    <td className="semLinha_esquerda">10/06/2021</td>
+                                    <td>Feira</td>
+                                    <td>R$ 458,37</td>
+                                    <td className="semLinha_direita">Despesa</td>
                                 </tr>
                             </tbody>
                         </Table>

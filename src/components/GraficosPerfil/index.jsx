@@ -28,7 +28,7 @@ const GraficosPerfil = () => {
             <Metas meta="Viajar para RJ" />
             <Metas meta="Comprar um celular" />
           </div>
-          <div className="perfil-graficos_img"></div>
+          {/* <div className="perfil-graficos_img"></div> */}
         </div>
       </section>
     </div>

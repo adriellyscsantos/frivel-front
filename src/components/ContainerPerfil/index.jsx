@@ -8,20 +8,16 @@ const ContainerPerfil = (props) => {
     <div>
       <section className="usuario__perfil">
         <div className="dados-usuarios__perfil">
-          <div className="dados-usuarios__imagem"> </div>
+         
           <div className="dados-usuarios-texto__perfil">
             <p>Isabela Almeida</p>
             <p>Recife, PE</p>
-            <a className="editar__perfil" href="#demo-modal-editar-perfil">
-              <button type="button" className="btn-new-edit btn-sm">
-                <i aria-hidden="true"></i>Editar Perfil
-              </button>
-            </a>
+           
           </div>
         </div>
 
         <div>
-          <p className="dados-usuarios-texto__perfil">Renda Total Acumulada</p>
+          <p className="dados-usuarios-texto__perfil">Saldo total</p>
           <h2 className="renda__perfil">RS 16.500,00</h2>
         </div>
       </section>

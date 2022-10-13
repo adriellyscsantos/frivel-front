@@ -24,7 +24,7 @@ const CardsPerfil = () => {
           </div>
 
           <div>
-            <p>Perca Mensal</p>
+            <p>Gastos</p>
             <h2>R$ 500,00</h2>
           </div>
         </div>
@@ -34,7 +34,7 @@ const CardsPerfil = () => {
           </div>
 
           <div>
-            <p>ganho Mensal</p>
+            <p>Receita</p>
             <h2>3.14%</h2>
           </div>
         </div>

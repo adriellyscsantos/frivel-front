@@ -25,7 +25,7 @@ const SignUp = () => {
         <form className="form">
           <label className="label-input" for="">
             <i className="far fa-user icon-modify"></i>
-            <input type="text" placeholder="Nome" />
+            <input type="text" placeholder="Email" />
           </label>
 
           <label className="label-input" for="">

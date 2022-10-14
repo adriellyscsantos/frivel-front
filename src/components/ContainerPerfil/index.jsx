@@ -10,8 +10,10 @@ const ContainerPerfil = (props) => {
         <div className="dados-usuarios__perfil">
          
           <div className="dados-usuarios-texto__perfil">
-            <p>Isabela Almeida</p>
+            <h3>Isabela Almeida, 25</h3>
             <p>Recife, PE</p>
+           
+           
            
           </div>
         </div>

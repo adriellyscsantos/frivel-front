@@ -60,6 +60,33 @@ const SignUp = () => {
             />
           </label>
           {errors.email && "campo Email é obrigatório."}
+          <label className="label-input">
+            <input
+              name="nascimento"
+              {...register("nascimento")}
+              type="date"
+              placeholder="Data de nascimento"
+            />
+          </label>
+          {errors.nascimento && "campo Data de nascimento é obrigatório."}
+          <label className="label-input">
+            <input
+              name="Estado"
+              {...register("estado")}
+              type="text"
+              placeholder="Estado"
+            />
+          </label>
+          {errors.estado && "campo Estado é obrigatório."}
+          <label className="label-input">
+            <input
+              name="cidade"
+              {...register("cidade")}
+              type="text"
+              placeholder="Cidade"
+            />
+          </label>
+          {errors.cidade && "campo cidade é obrigatório."}
 
           <label className="label-input">
             <input

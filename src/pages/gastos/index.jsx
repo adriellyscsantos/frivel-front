@@ -17,10 +17,10 @@ const Gastos = () => {
         <div className="gastos-container">
           <div>
             <ExibirGastos titulo="Gastos fixos" />
-            <ExibirGastos titulo="Gastos variaveis" />
+          
           </div>
           <div>
-            <HistoricoGastos />
+          <ExibirGastos titulo="Gastos variaveis" />
           </div>
         </div>
       </div>

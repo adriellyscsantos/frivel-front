@@ -58,3 +58,7 @@
   align-items: center;
   gap: 5px;
 }
+
+.valor__gastos{
+  margin: 0;
+}

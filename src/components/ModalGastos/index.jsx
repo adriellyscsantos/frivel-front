@@ -100,8 +100,13 @@ const ModalGastos = () => {
 
   return (
     <>
-      <div className="wrapper">
-        <a href="#demo-modal">+ NOVO GASTO</a>
+      <div className="container__wrapper-gastos">
+        <div>
+          <h2>Gastos</h2>
+        </div>
+        <div className="wrapper">
+          <a href="#demo-modal">+ NOVO GASTO</a>
+        </div>
       </div>
 
       <div id="demo-modal" className="modal" name="formulario">
@@ -127,7 +132,8 @@ const ModalGastos = () => {
             <form className="modal__form" onSubmit={handleSubmit(onSubmit)}>
               <div className="modal__form-content-gastos">
                 <p>Descrição </p>
-                <input {...register("descricao") }
+                <input
+                  {...register("descricao")}
                   className="modal__form-input"
                   type="text"
                   name="gasto"
@@ -135,7 +141,8 @@ const ModalGastos = () => {
                 <div>
                   <p>Categoria</p>
 
-                  <select {...register("categoria")}
+                  <select
+                    {...register("categoria")}
                     id="cars"
                     name="categoria"
                     className="modal__form-input"
@@ -152,7 +159,8 @@ const ModalGastos = () => {
 
                 <div>
                   <p>Tipo do Gasto</p>
-                  <select {...register("tipoDoGasto")}
+                  <select
+                    {...register("tipoDoGasto")}
                     id="cars"
                     name="tipo"
                     className="modal__form-input"
@@ -166,7 +174,8 @@ const ModalGastos = () => {
                 </div>
 
                 <p>Valor: </p>
-                <input {...register("valor")}
+                <input
+                  {...register("valor")}
                   className="modal__form-input"
                   type="number"
                   name="valor"
@@ -176,7 +185,8 @@ const ModalGastos = () => {
 
                 <div>
                   <p>Data do gasto</p>
-                  <input {...register("dtGastos")}
+                  <input
+                    {...register("dtGastos")}
                     type="date"
                     name="data"
                     className="modal__form-input"
@@ -187,7 +197,7 @@ const ModalGastos = () => {
                   {/* <button className="modal__footer-add" type="submit">
                     Adicionar
                   </button> */}
-                    <input className="modal__footer-add" type="submit" />
+                  <input className="modal__footer-add" type="submit" />
                 </div>
               </div>
             </form>

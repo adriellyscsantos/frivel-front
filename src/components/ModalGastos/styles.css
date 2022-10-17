@@ -1,4 +1,11 @@
 /* If you like this, be sure to ❤️ it. */
+
+.container__wrapper-gastos{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
+}
 .wrapper {
   /* This part is important for centering the content */
   display: flex;
@@ -6,7 +13,7 @@
 }
 
 .wrapper a {
-  background-color: #4169e1;
+  background-color: #4169E1;
   color: #fff;
   padding: 10px 15px;
   border-radius: 10px;

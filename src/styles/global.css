@@ -57,7 +57,7 @@ body {
 .gastos-container {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 

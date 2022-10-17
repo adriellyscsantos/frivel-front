@@ -16,6 +16,21 @@
   padding: 20px 40px;
 }
 
+.email {
+  font-size: 12px;
+  margin:0;
+  font-weight: 100;
+}
+
+.button__relatorios{
+  outline: none;
+  background-color: #FE5472;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: none;
+}
+
 .usuario__perfil {
   width: 100%;
   background: #00816e;

@@ -54,7 +54,7 @@
   background-color: #00816e;
   border-radius: 7px;
   color: #fff;
-  padding: 3px;
+  padding: 5px 10px;
   text-decoration: none;
 }
 .botao__perfil-metas:hover {
@@ -76,6 +76,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  padding: 5px 10px;
 }
 
 .botao__perfil-todas {
@@ -83,7 +84,7 @@
   background-color: #fe5472;
   border-radius: 7px;
   color: #fff;
-  padding: 3px;
+  padding: 5px 10px;
   text-decoration: none;
 }
 

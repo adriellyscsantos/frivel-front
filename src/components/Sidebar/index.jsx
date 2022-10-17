@@ -48,14 +48,14 @@ const Sidebar = () => {
                 <p> Receitas</p>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="s-sidebar__nav-link" href="/relatorios">
                 <div className="box__icons">
                   <CgClipboard size={30} color="00816E" />
                 </div>
                 <p> Relatório</p>
               </a>
-            </li>
+            </li> */}
             <li>
               <div className="s-sidebar__nav-logout">
                 <a className="s-sidebar__nav-link" href="/">

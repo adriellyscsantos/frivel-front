@@ -1,11 +1,15 @@
 .main__meta {
   max-width: 1100px;
-  margin-left: 15%;
-  margin-right: 15%;
+  /* margin-left: 15%;
+  margin-right: 15%; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
 }
 
 .btn-new-meta {
-  background-color: #00816e;
+  background-color: #4169E1;
   font-family: "roboto" bold;
   padding: 7px 5px;
   font-size: 85%;
@@ -24,7 +28,7 @@
 }
 .card-title {
   color: teal;
-  font-size: 120%;
+  font-size: 18px;
   font-family: roboto "bold";
   /*Width: 0px;*/
   height: 50px;
@@ -69,6 +73,7 @@
 .calendar {
   color: #00816e;
   font-size: 14px;
+  margin-top: 100px;
 }
 .icones {
   color: teal;

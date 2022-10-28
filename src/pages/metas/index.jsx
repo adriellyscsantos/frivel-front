@@ -5,10 +5,10 @@ import Sidebar from "../../components/Sidebar"
 
 const metas = () => {
   return (
-    <>
+    <div>
       <Sidebar/>
       <Metas/>
-    </>
+    </div>
   );
 };
 

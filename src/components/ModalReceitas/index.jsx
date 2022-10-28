@@ -93,10 +93,14 @@ const ModalReceitas = () => {
 
   return (
     <>
-      <div className="wrapper">
-        <a href="#demo-modal">+ NOVA RECEITA</a>
+      <div className="container__wrapper-gastos">
+        <div>
+          <h2>Receitas</h2>
+        </div>
+        <div className="wrapper">
+          <a href="#demo-modal">+ NOVA RECEITA</a>
+        </div>
       </div>
-
       <div id="demo-modal" className="modal" name="formulario">
         <div className="modal__content">
           <div>

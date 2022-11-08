@@ -68,3 +68,13 @@ body {
     gap: 30px;
   }
 }
+
+
+/* NAVBAR */
+
+.container__nav{
+  background-color: #00816E;
+  /* width: 100%; */
+  height: 50px;
+ box-shadow: 0 -15px 25px rgb(0 0 0 / 20%);
+}

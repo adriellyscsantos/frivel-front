@@ -1,13 +1,15 @@
 import React from "react";
 import ExibirGastos from "../../components/ExibirGastos";
 import HistoricoGastos from "../../components/HistoricoGastos";
-import Sidebar from "../../components/Sidebar";
+import Navbar from "../../components/Navbar";
 import ModalGastos from "../../components/ModalGastos";
 
 const Gastos = () => {
   return (
     <>
-      <Sidebar />
+      <div className="container__nav">
+        <Navbar />
+      </div>
 
       <div className="layout">
         <div>

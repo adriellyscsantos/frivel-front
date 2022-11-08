@@ -1,13 +1,15 @@
 import React from "react";
 import ExibirReceitas from "../../components/ExibirReceitas";
 //import HistoricoReceitas from "../../components/HistoricoReceitas";
-import Sidebar from "../../components/Sidebar";
+import Navbar from "../../components/Navbar";
 import ModalReceitas from "../../components/ModalReceitas";
 
 const Receitas = () => {
   return (
     <>
-      <Sidebar />
+       <div className="container__nav">
+        <Navbar />
+      </div>
 
       <div className="layout">
         <div>
